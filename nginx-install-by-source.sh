@@ -57,7 +57,7 @@ then
 fi
 chkconfig --add nginx
 ps -C nginx | grep "nginx"
-if [ ! $? -eq 0]
+if [ ! $? -eq 0 ]
 then
 	pkill -f nginx
 fi
